@@ -1,15 +1,32 @@
+<script setup lang="ts">
+const colorMode = useColorMode()
+
+const color = computed(() => colorMode.value === 'dark' ?  '#111827' : 'white')
+
+useHead({
+  meta: [
+    { charset: 'utf-8' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { key: 'theme-color', name: 'theme-color', content: color}
+  ],
+  htmlAttrs: {
+    lang: 'fa',
+    dir: 'rtl'
+  }
+})
+
+useSeoMeta({
+  titleTemplate: 'فوت موب',
+  ogSiteName: 'fotmob - persian'
+})
+</script>
 <template>
   <div>
-    <section>
+    <NuxtLoadingIndicator />
 
-      {{ counter }}
-    </section>
+    <NuxtLayout>
+      <NuxtPage/>
+    </NuxtLayout>
+
   </div>
 </template>
-
-<script setup>
-import { ref } from 'vue'
-
-const counter = ref(0)
-
-</script>
