@@ -10,9 +10,9 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/color-mode": "^3.3.2",
     "nuxt": "^3.9.0",
     "nuxt-quasar-ui": "^2.0.7",
-    "postcss-rtlcss": "^5.1.0",
     "vue": "^3.4.5",
     "vue-router": "^4.2.5"
   },

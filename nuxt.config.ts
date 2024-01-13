@@ -4,6 +4,11 @@ export default defineNuxtConfig({
 
   modules: [
     'nuxt-quasar-ui',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    '@nuxtjs/color-mode'
   ],
+
+  routeRules: {
+    '/backEnd/**': { proxy: { to: 'https://www.fotmob.com/api/**' }, cors: true }
+  }
 })
