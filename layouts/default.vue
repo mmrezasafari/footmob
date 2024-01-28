@@ -1,10 +1,12 @@
 <template>
   <v-layout>
-    <NavBar />
+    <v-locale-provider rtl>
+      <NavBar />
 
-    <slot />
+      <slot />
 
-    <Footer />
+      <Footer />
+    </v-locale-provider>
   </v-layout>
 </template>
 <script setup lang="ts">
