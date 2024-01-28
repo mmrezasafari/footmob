@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('~/node_modules/vazirmatn/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2'),
+    /* Add other font properties like font-weight and font-style if needed */
+}
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+}
