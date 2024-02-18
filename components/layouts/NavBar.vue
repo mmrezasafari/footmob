@@ -1,8 +1,8 @@
 <template>
-  <v-app-bar class="py-2 border-boottom" :elevation="1" scroll-behavior="hide">
+  <v-app-bar class="border-boottom py-2" :elevation="1">
     <v-container>
       <v-row align="center">
-        <v-col cols="2">
+        <v-col class="d-flex" cols="2" align="center">
           <svg xmlns="http://www.w3.org/2000/svg" width="108" height="18" viewBox="0 0 108 18">
             <g fill="var(--GlobalColorScheme-Logo-color)" id="ic_fotmob_logo" transform="translate(-586 -21)">
               <path id="Path_1"
@@ -17,7 +17,7 @@
         </v-col>
         <v-col cols="3">
           <v-text-field density="compact" variant="solo" prepend-inner-icon="mdi-magnify" placeholder="جستجو" rounded="xl"
-            clearable hide-details></v-text-field>
+            single-line clearable hide-details bg-color="grey-lighten-2"></v-text-field>
         </v-col>
         <v-col class="flex" col="7" align="end">
           <v-btn variant="plain" href="#">
@@ -43,3 +43,10 @@
     </v-container>
   </v-app-bar>
 </template>
+
+<style scoped>
+.v-btn {
+  letter-spacing: 0 !important;
+  opacity: 1 !important;
+}
+</style>
