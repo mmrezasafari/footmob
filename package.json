@@ -21,7 +21,9 @@
   "dependencies": {
     "@mdi/font": "^7.4.47",
     "@pinia/nuxt": "^0.5.1",
+    "fotmob": "^2.4.0",
     "pinia": "^2.1.7",
+    "sass": "^1.71.0",
     "vazirmatn": "^33.0.3"
   },
   "module": "index.ts",
