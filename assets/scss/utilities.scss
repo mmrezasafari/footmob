@@ -1,0 +1,29 @@
+@import './vars';
+
+.border-radius-xs {
+  border-radius: $xs-px;
+}
+
+.border-radius-sm {
+  border-radius: $sm-px;
+}
+
+.border-radius-md {
+  border-radius: $md-px;
+}
+
+.border-radius-lg {
+  border-radius: $lg-px;
+}
+
+.border-radius-xl {
+  border-radius: $xl-px;
+}
+
+.border-radius-xxl {
+  border-radius: $xxl-px;
+}
+
+.border-radius-circle {
+  border-radius: 50%;
+}
